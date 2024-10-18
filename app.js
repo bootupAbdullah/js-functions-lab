@@ -176,3 +176,66 @@ function convertTemperature (temp, str) {
 console.log('Exercise 8 Result:', convertTemperature(32, "C"));
 
 
+/*
+Exercise 9: basicCalculator()
+
+Create a function named basicCalculator. 
+It should take three arguments: two numbers and a string representing 
+an operation ('add', 'subtract', 'multiply', 'divide'). 
+Perform the provided operation on the two numbers. 
+In operations where the order of numbers is important, 
+treat the first parameter as the first operand and the 
+second parameter as the second operand.
+
+Example: basicCalculator(10, 5, 'subtract') should return 5.
+
+Complete the exercise in the space below:
+*/
+
+
+function basicCalculator (num1, num2, str) {
+    if (str === 'divide') {
+        return num1/num2
+    } else if (str === 'add') {
+        return num1 + num2
+    } else if (str === 'subtract') {
+        return num1 - num2
+    } else {
+        return num1 * num2
+    }
+}
+
+console.log('Exercise 9 Result:', basicCalculator(10, 5, "multiply"));
+
+
+/*
+Exercise 10: calculateGrade()
+
+Define a function called calculateGrade. 
+It should take a numerical score and return the corresponding letter 
+grade (A, B, C, D, F). 
+
+For example, 90 and above yields an 'A', 80-89 is a 'B', 
+and 70-79 is a 'C', 60-69 is a 'D' and anything lower than a 60 is an 'F'.
+
+Example: calculateGrade(100) should return A.
+
+Complete the exercise in the space below:
+*/
+function calculateGrade(num) {
+    if (num >= 90) {
+        return 'A'
+    } else if (num <= 89 && num >= 80) {
+        return 'B'
+    } else if (num <= 79 && num >= 70) {
+        return 'C'
+    } else if (num <= 69 && num >= 60) {
+        return 'D'
+    } else {
+        return 'F'
+    }
+}
+
+console.log('Exercise 10 Result:', calculateGrade(85));
+
+
