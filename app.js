@@ -54,13 +54,14 @@ Complete the exercise in the space below:
 */
 
 function isCharAVowel(letter) {
-    if (letter === ("a", "e", "i", "o", "u")) {
+    if (letter in ["a", "e", "i", "o", "u"]){
         return true
+    } else {
+        return false
     }
 }
 
-console.log('Exercise 3 Result:', isCharAVowel("a"));
-
+console.log('Exercise 3 Result:', isCharAVowel("b"));
 
 /*
 Exercise 4: generateEmail()
