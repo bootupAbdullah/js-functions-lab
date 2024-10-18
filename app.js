@@ -239,3 +239,60 @@ function calculateGrade(num) {
 console.log('Exercise 10 Result:', calculateGrade(89));
 
 
+/*
+Exercise 11: createUsername()
+
+Define a function called createUsername. 
+It should take a first name and a last name and return a username. 
+
+The username should be a combination of the following:
+- The first three letters of the first name.
+- The first three letters of the last name.
+- The total character count of the first and last name combined.
+
+Example: createUsername('Samantha', 'Green') should return 'SamGre13'.
+
+Complete the exercise in the space below:
+*/
+
+ // !! I did not get to complete this challenge
+
+function createUsername (first, last) {
+    firstThree = ""
+    lastThree = ""
+    count = 0
+
+    for (let i = 0; i > 3; i++){
+        firstThree += first[i]
+        lastThree += last[i]
+        userName = firstThree + lastThree
+        return userName  
+    }
+    }
+
+console.log(createUsername(''))
+
+// console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+
+
+
+
+/*
+Exercise 12: numArgs()
+
+Challenge yourself with numArgs. 
+This function should return the count of arguments passed to it when called.
+
+Complete the exercise in the space below:
+*/
+
+// !! I did not get to complete this challenge
+
+
+function numArgs(arg1, arg2, arg3, arg4) {
+    const args = [arg1, arg2, arg3, arg4]
+    for (let i = 0; i < args.length i++) {
+    } return i
+}
+
+console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
