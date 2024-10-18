@@ -236,6 +236,6 @@ function calculateGrade(num) {
     }
 }
 
-console.log('Exercise 10 Result:', calculateGrade(85));
+console.log('Exercise 10 Result:', calculateGrade(89));
 
 
